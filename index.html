@@ -1,11 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="BARBEROS CORDOBA, tu peluquería de confianza en el corazón de Cordoba. Ofrecemos cortes, tintes, peinados y más.">
+    <meta name="keywords" content="peluquería, cortes de cabello, tintes, peinados, belleza">
+    <meta name="author" content="BARBEROS CORDOBA Team">
+    
+    <!-- Metadatos para redes sociales  -->
+    <meta property="og:title" content="BARBEROS CORDOBA - Peluquería">
+    <meta property="og:description" content="Reserva tu cita en BARBEROS CORDOBA para un cambio de look espectacular.">
+    <meta property="og:image" content="./assets/images/logo-peluqueria.jpg">
+    <meta property="og:url" content="https://www.barberoscordoba.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.png" >
+    
+    <!-- Título de la página -->
+    <title>BARBEROS CORDOBA - Peluquería de Confianza</title>
 </head>
 <body>
-    
+    <!-- Encabezado con logotipo y menú de navegación -->
+    <header>
+        <img src="./assets/images/logo-peluqueria.jpg" alt="Logotipo de BARBEROS CORDOBA, con unas tijeras estilizadas y un peine sobre fondo blanco.">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Nuestro Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Título principal de la página -->
+        <h1>Bienvenido a BARBEROS CORDOBA</h1>
+        <p>Descubre el arte de la belleza en nuestra peluquería. Te ofrecemos servicios personalizados para realzar tu estilo único.</p>
+
+        <!-- Sección de introducción -->
+        <section id="inicio">
+            <h2>¿Por qué elegirnos?</h2>
+            <p>Con <strong>más de 10 años de experiencia</strong>, nuestro equipo de profesionales te asesorará para encontrar el look perfecto. Usamos productos de alta calidad y seguimos las últimas tendencias en peluquería.</p>
+            <figure>
+                <img src="./assets/images/salon-interior.jpg" alt="Interior acogedor de la peluquería BARBEROS CORDOBA, con estaciones de trabajo modernas, espejos iluminados y sillas cómodas.">
+                <figcaption>Nuestro salón, un espacio de relajación y transformación.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Sección de servicios, usando articles para entradas individuales -->
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <article>
+                <h3>Corte de Cabello</h3>
+                <p>Desde cortes clásicos hasta estilos modernos, adaptados a tu rostro y personalidad. Precio: 25€.</p>
+                <ul>
+                    <li>Corte hombre</li>
+                    <li>Corte mujer</li>
+                    <li>Niños hasta 12 años</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Tintes y Coloración</h3>
+                <p>Renueva tu color con técnicas avanzadas como balayage o mechas californianas. Consulta sin compromiso.</p>
+                <blockquote>
+                    <q>El cabello es tu corona, haz que brille.</q> - Nuestro lema
+                </blockquote>
+            </article>
+            <article>
+                <h3>Peinados y Tratamientos</h3>
+                <p>Peinados para eventos especiales y tratamientos capilares para cabello dañado o seco.</p>
+            </article>
+        </section>
+
+        <!-- Contenido secundario en aside, como promociones -->
+        <aside>
+            <h2>Promociones Especiales</h2>
+            <ul>
+                <li><strong>20% descuento</strong> en tu primera visita.</li>
+                <li>Paquete familiar: Corte + tinte por 50€.</li>
+                <li><a href="#contacto">Reserva ahora</a> y recibe un champú de regalo.</li>
+            </ul>
+        </aside>
+
+        <!-- Sección del equipo -->
+        <section id="equipo">
+            <h2>Nuestro Equipo</h2>
+            <p>Conoce a los expertos que cuidarán de ti:</p>
+            <ol>
+                <li>Antonio López - Especialista en coloración, con 15 años de experiencia.</li>
+                <li>Carlos Ruiz - Maestro en cortes modernos y barbería.</li>
+                <li>Daniel González - Experta en peinados de novia y eventos.</li>
+            </ol>
+            <figure>
+                <img src="./assets/images/equipo-peluqueria.jpg" alt="Foto del equipo de BARBEROS CORDOBA: tres peluqueros  posando en el salónequ.">
+                <figcaption>Nuestro apasionado equipo listo para servirte.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Sección de formulario de contacto -->
+        <section id="contacto">
+            <h2>Reserva tu Cita</h2>
+            <form action="https://www.barberoscordoba.com/enviar-reserva" method="post">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required maxlength="50">
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    
+                    <label for="telefono">Teléfono (opcional):</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Detalles de la Reserva</legend>
+                    <label for="servicio">Servicio deseado:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="corte">Corte de cabello</option>
+                        <option value="barba">Corte y barba</option>
+                        <option value="peinado">Peinado y tratamientos</option>
+                    </select>
+                    
+                    <label for="fecha">Fecha preferida:</label>
+                    <input type="date" id="fecha" name="fecha" required min="2025-09-21">
+                    
+                    <label for="mensaje">Mensaje adicional:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Cualquier detalle extra sobre tu visita..."></textarea>
+                </fieldset>
+                
+                <input type="submit" value="Enviar Reserva">
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página con información de contacto, copyright y redes sociales -->
+    <footer>
+        <section>
+            <h3>Contacto</h3>
+            <address>
+                <p>Avenida Arroyo del Moro 78, Cordoba, 14005</p>
+                <p>Teléfono: <a href="tel:+34123456789">+34 123 456 789</a></p>
+                <p>Email: <a href="mailto:info@barberoscordoba.com">info@barberoscordoba.com</a></p>
+            </address>
+        </section>
+        
+        <section>
+            <h3>Síguenos</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/barberoscordoba">Instagram</a></li>
+                <li><a href="https://www.facebook.com/barberoscordoba">Facebook</a></li>
+                <li><a href="https://www.X.com/barberoscordoba">X</a></li>
+            </ul>
+        </section>
+        
+        <p>&copy; 2025 BARBEROS CORDOBA. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
